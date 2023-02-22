@@ -34,7 +34,7 @@ const login=async(req,res,next)=>{
             httpOnly:true,
         })
         .status(200)
-        .json({...otherdetails})
+        .json({token})
     } catch (error) {
         next(error)
     }
